@@ -30,7 +30,7 @@ def swap_letters(message):
     return new_message
 
 def get_task():
-    task = simpledialog.askstring('Task', 'Do you want to encrypt or decrypt?')
+    task = simpledialog.askstring('Task', 'Do you want to encrypt or decrypt?').strip().lower()
     return task
 
 def get_message():
